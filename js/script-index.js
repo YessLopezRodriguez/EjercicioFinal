@@ -30,6 +30,11 @@ function renderHighlightedRecipes(recipesArray) {
 */
 function renderRecipe(recipe) {
 	console.log('Voy a pintar la receta: ', recipe);
+	//Etapa 4
+	$("<a class='item-recipe' href='#'><span class='attribution'><span class='title-recipe'> TITULO DE LA RECETA</span><span class='metadata-recipe'><span class='author-recipe'> NOMBRE DEL AUTO DE LA RECETA</span><span class='bookmarks-recipe'><span class='icon-bookmark'></span></span></span></span><img src=''/></a>").appendTo(".list-recipes");
+	$(".title-recipe").last().text(recipesArray[recipe].title);	
+	$(".author-recipe").last().text(recipesArray[recipe].source.name);
+	$(".list-recipes img").last().attr('src',"img/recipes/320x350/" + recipesArray[recipe].name + ".jpg");
 }
 
 
