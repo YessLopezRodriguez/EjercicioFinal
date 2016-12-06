@@ -42,4 +42,11 @@ function renderActivity(recipe) {
 	
 }
 
+// Etapa 2
+function printNews() {
+	$(".callout-news > p").text("NUEVAS RECETAS");
+};
+
+printNews();
+
 
