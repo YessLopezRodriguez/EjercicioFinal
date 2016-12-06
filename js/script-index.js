@@ -3,6 +3,7 @@ $(document).ready( function(){
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 	$(".js-back").hide(); // Etapa 1
+	renderActivities(activities); // Etapa 5
 });
 
 
@@ -44,6 +45,14 @@ function renderRecipe(recipe) {
 */
 function renderActivities(activitiesArray) {
 	console.log('Activities: ', activitiesArray);
+	
+	$(activitiesArray).each(function(index, element){ //Etapa 5
+		renderActivity(element);
+		if(activitiesArray.length > 0){
+			$(".wrapper-message").hide();
+		}
+	});
+
 }
 
 /*
