@@ -1,5 +1,6 @@
 $(document).ready( function(){
-
-	$(".js-menu").hide(); // Etapa 1
 	
+	console.log("Esta Listo"); //Etapa 7
+	$(".js-menu").hide(); // Etapa 1
+
 });
